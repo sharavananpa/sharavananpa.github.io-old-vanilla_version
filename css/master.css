@@ -1,9 +1,20 @@
-body {
-  background-color: #252a34;
-  text-align: center;
+.about {
+  color: #ffffff;
+  font-family: monospace;
+  height: 10em;
+  width: 55em;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
-h1 {
-  font-family: 'Satisfy', cursive;
-  color: #ff2e63;
+.navbar {
+  font-family: monospace;
+}
+
+.bg-dark {
+  background-color: black!important;
 }
