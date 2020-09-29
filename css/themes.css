@@ -1,0 +1,95 @@
+/* CAN EASILY CUSTOMIZE THEMES */
+
+/* DARK MODE */
+.dark {
+    background-color: #141414;
+    color: whitesmoke;
+}
+
+/* RED */
+.theme-1 .sidebar {
+    background-color: #ac4142;
+}
+.theme-1 .content a, .theme-1 .content h1{
+    color: #ac4142;
+}
+.theme-1 .content a:hover{
+    color: grey;
+}
+
+/* ORANGE */
+.theme-2 .sidebar {
+    background-color: #d28445;
+}
+.theme-2 .content a, .theme-2 .content h1{
+    color: #d28445;
+}
+.theme-2 .content a:hover{
+    color: grey;
+}
+
+/* YELLOW */
+.theme-3 .sidebar {
+    background-color: #f4bf75;
+}
+.theme-3 .content a, .theme-3 .content h1{
+    color: #f4bf75;
+}
+.theme-3 .content a:hover{
+    color: grey;
+}
+
+/* GREEN */
+.theme-4 .sidebar {
+    background-color: #90a959;
+}
+.theme-4 .content a, .theme-4 .content h1{
+    color: #90a959;
+}
+.theme-4 .content a:hover{
+    color: grey;
+}
+
+/* CYAN */
+.theme-5 .sidebar {
+    background-color: #75b5aa;
+}
+.theme-5 .content a, .theme-5 .content h1{
+    color: #75b5aa;
+}
+.theme-5 .content a:hover{
+    color: grey;
+}
+
+/* BLUE */
+.theme-6 .sidebar {
+    background-color: #6a9fb5;
+}
+.theme-6 .content a, .theme-6 .content h1{
+    color: #6a9fb5;
+}
+.theme-6 .content a:hover{
+    color: grey;
+}
+
+/* MAGENTA */
+.theme-7 .sidebar {
+    background-color: #aa759f;
+}
+.theme-7 .content a, .theme-7 .content h1{
+    color: #aa759f;
+}
+.theme-7 .content a:hover{
+    color: grey;
+}
+
+/* BROWN */
+.theme-8 .sidebar {
+    background-color: #8f5536;
+}
+.theme-8 .content a, .theme-8 .content h1{
+    color: #8f5536;
+}
+.theme-8 .content a:hover{
+    color: grey;
+}

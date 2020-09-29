@@ -1,0 +1,178 @@
+/* BASIC */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    color: #515151;
+    background-color: whitesmoke;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Body text */
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #303030;
+}
+
+
+/* Lists */
+ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-bottom: .5rem;
+}
+
+/* Misc */
+hr {
+    position: relative;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+abbr {
+    font-size: 85%;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+/* RESPONSIVENESS */
+@media (min-width: 48rem) {
+    html {
+        font-size: 18px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 22rem;
+        overflow-y: auto;
+    }
+    .content {
+        margin-right: 24rem;
+    }
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: black;
+    color: rgba(245, 245, 245, 0.5);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sidebar a {
+    color: whitesmoke;
+}
+
+.sidebar a:hover {
+    opacity: 0.7;
+}
+
+.sidebar a:active {
+    opacity: 0.5;
+}
+
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+}
+
+.sidebar-social {
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    display: inline-flex;
+}
+
+.sidebar-color {
+    padding: 1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: inline-flex;
+}
+
+.btn-social {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    line-height: 4rem;
+}
+
+/* CONTENT */
+.content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
