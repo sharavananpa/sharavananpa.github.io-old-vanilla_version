@@ -5,17 +5,34 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sharavanan Balasundaravel</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel="stylesheet" href="css/themes.css">
-</head>
-<body class="theme-5">
 
+    <!-- SCRIPT -->
+    <script>
+        function intro() {
+            document.getElementById('sidebar').style.visibility = "visible";
+            document.getElementById('main-content').style.visibility = "visible";
+        }
+    </script>
+
+    <!-- NO SCRIPT -->
+    <noscript>
+        <div class="noscript">
+            <h1 style="color: crimson;">
+                No JS in your browser da dei!!! <br>
+                You have to enable <a href="https://support.google.com/adsense/answer/12654?hl=en" target="_blank">javascript</a> in the settings.
+            </h1>
+        </div>
+    </noscript>
+</head>
+<body onload="intro()" class="theme-1">
     <!-- SIDEBAR -->
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar" style="visibility: hidden;">
         <div class="sidebar-me">
             <h1> 
                 <a href="https://sharavananpa.github.io/">
@@ -33,36 +50,42 @@
 
         <div class="sidebar-social">
                 <a class="btn-social" href="https://github.com/sharavananpa" target="_blank" title="Sharavanan on GitHub"><i class="fa fa-fw fa-github"></i></a>
-
                 <a class="btn-social" href="https://twitter.com/sharavananpa" target="_blank" title="Sharavanan on Twitter"><i class="fa fa-fw fa-twitter"></i></a>
-
                 <a class="btn-social" href="https://www.linkedin.com/in/sharavananpa/" target="_blank" title="Sharavanan on Linkedin"><i class="fa fa-fw fa-linkedin"></i></a>
         </div>
-        <p class="footer">&#169 copyright aavadhu mairavadhu</p>
+        <p class="footer">&#169; copyright aavadhu mairavadhu</p>
 
         <div class="sidebar-color">
-            <a class="btn-social" onclick="changeColor()" title="Change Color"><i class="fa fa-tint"></i></a>
-
+            <a class="btn-social" style="cursor: help;" onclick="changeColor()" title="Change Color"><i class="fa fa-tint"></i></a>
             <a class="btn-social" onclick="darkMode()" title="Change Theme"><i class="fa fa-moon-o"></i></a>
         </div>
     </div>
 
     <!-- CONTENT -->
-    <div id="main-content" class="content">
+    <div id="main-content" class="content" style="visibility: hidden;">
         <!-- Main content will be displayed here -->
     </div>
 
     <div id="projects" hidden>
-        <h1>About me</h1>
+        <h1>My projects</h1>
         projects
     </div>
 
     <div id="music" hidden>
-        music
+        <h1>My music</h1>
+        <p>Minnalgal Koothadum x Oru Kal (Cover)</p>
+        <audio controls preload="auto">
+            <source src="music/minnalgal_oru_kal.mp3" type="audio/mpeg">
+        </audio>
+        <p>Oru Thala Raagam (Cover)</p>
+        <audio controls preload="auto">
+            <source src="music/oru_thala_raagam_ver2.mp3" type="audio/mpeg">
+        </audio>
     </div>
 
     <div id="problem" hidden>
-        problem
+        <h1>Problem</h1>
+        Problem
     </div>
 
     <script src="js/shar.js"></script>
