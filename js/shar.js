@@ -1,3 +1,11 @@
+function intro() {
+    var color = setInterval(changeColor, 500);
+    setTimeout(() => {
+        clearInterval(color);
+    }, 1000);
+    console.log('Intro!')
+}
+
 var color = 4;
 var prev = 4;
 
