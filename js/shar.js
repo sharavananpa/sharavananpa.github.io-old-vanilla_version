@@ -1,17 +1,12 @@
-function showContent(id) {
-    document.getElementById('main-content').innerHTML = document.getElementById(id).innerHTML;
-    console.log("Content changed!");
-}
-
-var color = 1;
-var prev = 1;
+var color = 4;
+var prev = 4;
 
 function changeColor() {
     document.body.classList.remove("theme-" + prev);
     document.body.classList.add("theme-" + ++color);
-    console.log("Color changed!");
+    console.log("Color changed! Theme-" + color);
     prev = color;
-    if(color==8)
+    if(color==7)
         color = 0;
 }
 

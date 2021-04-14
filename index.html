@@ -14,10 +14,17 @@
 
     <!-- SCRIPT -->
     <script>
+
         function intro() {
-            document.getElementById('sidebar').style.visibility = "visible";
-            document.getElementById('main-content').style.visibility = "visible";
+            
+            var color = setInterval(changeColor, 500);
+            setTimeout(() => {
+                clearInterval(color);
+            }, 1000);
+            
+            console.log('Intro!')
         }
+
     </script>
 
     <!-- NO SCRIPT -->
@@ -30,22 +37,23 @@
         </div>
     </noscript>
 </head>
-<body onload="intro()" class="theme-1">
+
+<body class="theme-4" onload="intro()">
+
     <!-- SIDEBAR -->
-    <div id="sidebar" class="sidebar" style="visibility: hidden;">
+    <div id="sidebar" class="sidebar">
         <div class="sidebar-me">
             <h1> 
                 <a href="https://sharavananpa.github.io/">
-                    Sharavanan Balasundaravel
+                    sharavanan balasundaravel
                 </a>
             </h1>
-            <p>heyyy wassupp!</p>
+            <p>hey there!</p>
         </div>
 
         <nav class="sidebar-nav">
-            <a class="sidebar-nav-item" onclick="showContent('projects')">Projects</a>
-            <a class="sidebar-nav-item" onclick="showContent('music')">Music</a>
-            <a class="sidebar-nav-item" onclick="showContent('problem')">Problem of the day</a>
+            <a class="sidebar-nav-item" onclick="console.log('my music clicked!')">my music</a>
+            <a class="sidebar-nav-item" onclick="console.log('X clicked!')">XXX</a>
         </nav>
 
         <div class="sidebar-social">
@@ -53,39 +61,28 @@
                 <a class="btn-social" href="https://twitter.com/sharavananpa" target="_blank" title="Sharavanan on Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                 <a class="btn-social" href="https://www.linkedin.com/in/sharavananpa/" target="_blank" title="Sharavanan on Linkedin"><i class="fa fa-fw fa-linkedin"></i></a>
         </div>
-        <p class="footer">&#169; copyright aavadhu mairavadhu</p>
+
+        <br>
 
         <div class="sidebar-color">
             <a class="btn-social" style="cursor: help;" onclick="changeColor()" title="Change Color"><i class="fa fa-tint"></i></a>
             <a class="btn-social" onclick="darkMode()" title="Change Theme"><i class="fa fa-moon-o"></i></a>
         </div>
+
+        <p class="footer">&#169; copyright la onnum illa</p>
+        
+        <img class="footer" src="images/fire.webp" alt="Ah! Just fillin the gap.." style="height: 200px;">
     </div>
 
     <!-- CONTENT -->
-    <div id="main-content" class="content" style="visibility: hidden;">
+    <div id="main-content" class="content">
         <!-- Main content will be displayed here -->
-    </div>
-
-    <div id="projects" hidden>
-        <h1>My projects</h1>
-        <a href="https://sharavananpa.github.io/the-memory-game/" target="_blank" rel="noopener noreferrer">The Memory Game</a>
-    </div>
-
-    <div id="music" hidden>
-        <h1>My music</h1>
-        <p>Minnalgal Koothadum x Oru Kal (Cover)</p>
-        <audio controls preload="auto">
-            <source src="music/minnalgal_oru_kal.mp3" type="audio/mpeg">
-        </audio>
-        <p>Oru Thala Raagam (Cover)</p>
-        <audio controls preload="auto">
-            <source src="music/oru_thala_raagam_ver2.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-
-    <div id="problem" hidden>
-        <h1>Problem</h1>
-        Problem
+        <center>
+            <h1>inga edachu intro podanum</h1>
+            <h2>my projects</h2>
+            <a href="https://sharavananpa.github.io/the-memory-game/" target="_blank" rel="noopener noreferrer">The Memory Game</a>
+        
+        </center>
     </div>
 
     <script src="js/shar.js"></script>

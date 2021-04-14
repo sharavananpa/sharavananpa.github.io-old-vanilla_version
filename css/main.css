@@ -22,8 +22,24 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
 a:focus {
     text-decoration: underline;
+}
+
+.content a {
+    color: #141414;
+}
+
+.sidebar a, .dark a {
+    color: whitesmoke;
 }
 
 /* Headings */
@@ -31,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     font-weight: bold;
     line-height: 1.25;
-    color: #313131;
     text-rendering: optimizeLegibility;
 }
 
@@ -60,11 +75,6 @@ p {
     margin-bottom: 1rem;
 }
 
-strong {
-    color: #303030;
-}
-
-
 /* Lists */
 ul, ol, dl {
     margin-top: 0;
@@ -86,7 +96,6 @@ hr {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #fff;
 }
-
 abbr {
     font-size: 85%;
     font-weight: bold;
@@ -108,18 +117,6 @@ abbr[title] {
     padding-top: 4rem;
     padding-bottom: 8rem;
     text-align: center;
-}
-
-.sidebar a {
-    color: whitesmoke;
-}
-
-.sidebar a:hover {
-    opacity: 0.7;
-}
-
-.sidebar a:active {
-    opacity: 0.5;
 }
 
 .sidebar-nav {
@@ -154,6 +151,14 @@ abbr[title] {
     font-size: 0.8rem;
     opacity: 0.8;
     line-height: 4rem;
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* CONTENT */
@@ -184,19 +189,11 @@ body {
     html {
         font-size: 16px;
     }
-
-    audio {
-        width: 24rem;
-    }
 }
 
 @media (min-width: 768px) { 
     html {
         font-size: 18px;
-    }
-
-    audio {
-        width: 28rem;
     }
 }
 
@@ -204,11 +201,6 @@ body {
     html {
         font-size: 16px;
     }
-    
-    audio {
-        width: 28rem;
-    }
-
     .sidebar {
         position: fixed;
         top: 0;
@@ -230,11 +222,6 @@ body {
     html {
         font-size: 18px;
     }
-
-    audio {
-        width: 32rem;
-    }
-
     .sidebar {
         position: fixed;
         top: 0;
