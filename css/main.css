@@ -3,6 +3,7 @@
 html,
 body {
     margin: 0;
+    height: 100%;
 }
 
 html {
@@ -107,6 +108,14 @@ abbr[title] {
     border-bottom: 1px dotted #e5e5e5;
 }
 
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -136,10 +145,11 @@ abbr[title] {
 }
 
 .sidebar-color {
-    padding: 1rem;
-    font-size: 3rem;
-    line-height: 4rem;
+    padding: 2rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     display: inline-flex;
+    opacity: 85%;
 }
 
 .btn-social {
@@ -151,14 +161,6 @@ abbr[title] {
     font-size: 0.8rem;
     opacity: 0.8;
     line-height: 4rem;
-    pointer-events: none;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* CONTENT */
@@ -185,15 +187,19 @@ body {
 
 /* RESPONSIVENESS */
 
-@media (min-width: 640px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 768px) { 
+@media (max-width: 1023px) { 
     html {
         font-size: 18px;
+    }
+    .sidebar {
+        height: 100%;
+        padding: 2rem;
+    }
+    .content {
+        padding-top: 6rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        padding-bottom: 10rem;
     }
 }
 
