@@ -167,6 +167,7 @@ abbr[title] {
 /* CONTENT */
 
 .content {
+    text-align: center;
     padding-left: 4rem;
     padding-right: 6rem;
     padding-top: 2rem;
