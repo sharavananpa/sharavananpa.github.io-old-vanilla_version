@@ -220,7 +220,7 @@ body {
     }
 }
 
-@media (min-height: 812px) { 
+@media (min-height: 808px) { 
     .sidebar {
         padding: 2rem;
         padding-top: 12rem;
