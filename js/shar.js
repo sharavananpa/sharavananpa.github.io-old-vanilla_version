@@ -1,4 +1,6 @@
 function intro() {
+    document.getElementById('sidebar').classList.remove('init');
+    document.getElementById('main-content').classList.remove('init');
     var color = setInterval(changeColor, 500);
     setTimeout(() => {
         clearInterval(color);
